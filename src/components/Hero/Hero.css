@@ -21,7 +21,8 @@
 .hero-blur {
     width: 22rem;
     height: 30rem;
-    left: 0;
+    top: 50px;
+    left: 250px;
 }
 
 .the-best-add {

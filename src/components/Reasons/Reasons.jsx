@@ -12,6 +12,7 @@ import "./Reasons.css";
 const Reasons = () => {
   return (
     <div className='Reasons' id='reasons'>
+      <div className="blur plans-blur-0"></div>
       <div className="left-r">
         <img src={image1} alt="" />
         <img src={image2} alt="" />
@@ -19,6 +20,7 @@ const Reasons = () => {
         <img src={image4} alt="" />
       </div>
       <div className="right-r">
+
         <span>some reasons</span>
         <div>
           <span className="stroke-text">Why</span>
@@ -43,7 +45,7 @@ const Reasons = () => {
             <span>reliable partners</span>
           </div>
         </div>
-        <span style={{ marginTop: "10px",color: "var(--gray)", fontWeight: "normal" }}>OUR PARTNERS</span>
+        <span style={{ marginTop: "10px", color: "var(--gray)", fontWeight: "normal" }}>OUR PARTNERS</span>
         <div className="partners">
           <img src={nb} alt="" />
           <img src={adidas} alt="" />

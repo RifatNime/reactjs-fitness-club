@@ -12,13 +12,21 @@ import NumberCounter from "number-counter";
 import { Link } from 'react-scroll'
 
 const Hero = () => {
+    const transition = {
+        type: 'spring', duration: 3
+    }
     return (
         <div className='hero'>
+            <div className="blur hero-blur"></div>
+            <div className="blur blur-f"></div>
             <div className="left-h">
                 <Header />
                 {/* The Best Add part */}
                 <div className="the-best-add">
-                    <div className=''></div>
+                    <motion.div className='' initial={{ left: "255px" }}
+                        whileInView={{ left: "8px" }}
+                        transition={{ ...transition, type: "tween" }}
+                    ></motion.div>
                     <span className=''>JOIN! THE BEST FITNESS CLUB IN THE TOWN</span>
                 </div>
                 {/* The hero Heading */}
@@ -58,30 +66,52 @@ const Hero = () => {
             </div>
             <div className="right-h">
                 <button className='btn'>Join Now!</button>
-                <div className="heart-rate">
+                <motion.div
+                    initial={{ right: "-1rem" }}
+                    whileInView={{ right: "4rem" }}
+                    transition={transition}
+                    className="heart-rate"
+                >
                     <img src={Heart} alt="" className='' />
                     <span>Heart Rate</span>
                     <span>116 bpm</span>
-                </div>
+                </motion.div>
                 {/* hero iamge */}
                 <img src={hero_image1} alt="" className='hero-image' />
-                <img src={hero_image_back} alt="" className='hero-image-back' />
+                <motion.img
+                    initial={{ right: "11rem" }}
+                    whileInView={{ right: "20rem" }}
+                    transition={transition}
+                    className="hero-image-back"
+                    src={hero_image_back}
+                    alt=""
+                />
                 {/* calories */}
-                <div className="calories">
+                <motion.div
+                    initial={{ right: "32rem" }}
+                    whileInView={{ right: "28rem" }}
+                    transition={transition}
+                    className="calories"
+                >
                     <img src={Calories} alt="" />
                     <div>
                         <span>Calories burned</span>
                         <span>220 kcal</span>
+
                     </div>
-                </div>
+                </motion.div>
                 {/* clock */}
-                <div className="clock-time">
+                <motion.div
+                    initial={{ right: "11rem" }}
+                    whileInView={{ right: "35rem" }}
+                    transition={transition}
+                    className="clock-time">
                     <img src={Clock} alt="" />
                     <div>
                         <span>Time</span>
                         <span>30 sec</span>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

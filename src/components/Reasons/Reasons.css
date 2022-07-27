@@ -12,6 +12,13 @@
     gap: 1rem;
     grid-auto-rows: 1fr;/*give equal height*/
 }
+.plans-blur-0 {
+
+    width: 32rem;
+    height: 23rem;
+    top: 70rem;
+    right: 10rem;
+}
 
 .left-r>img {
     object-fit: cover;
