@@ -18,7 +18,8 @@
 
 .header-menu>li:hover {
     color: var(--orange);
-    cursor: pointer
+    cursor: pointer;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {

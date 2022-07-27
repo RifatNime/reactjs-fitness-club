@@ -2,6 +2,14 @@
 import React from 'react';
 import Header from '../Header/Header';
 import './Hero.css';
+import hero_image1 from "../../assets/hero-image1.png"
+import hero_image_back from "../../assets/hero_image_back.png";
+import Heart from "../../assets/heart.png";
+import Calories from "../../assets/calories.png";
+import Clock from "../../assets/clock.png";
+import { motion } from "framer-motion";
+import NumberCounter from "number-counter";
+import { Link } from 'react-scroll'
 
 const Hero = () => {
     return (
@@ -48,7 +56,33 @@ const Hero = () => {
                     <button className="btn">Learn More</button>
                 </div>
             </div>
-            <div className="right-h"></div>
+            <div className="right-h">
+                <button className='btn'>Join Now!</button>
+                <div className="heart-rate">
+                    <img src={Heart} alt="" className='' />
+                    <span>Heart Rate</span>
+                    <span>116 bpm</span>
+                </div>
+                {/* hero iamge */}
+                <img src={hero_image1} alt="" className='hero-image' />
+                <img src={hero_image_back} alt="" className='hero-image-back' />
+                {/* calories */}
+                <div className="calories">
+                    <img src={Calories} alt="" />
+                    <div>
+                        <span>Calories burned</span>
+                        <span>220 kcal</span>
+                    </div>
+                </div>
+                {/* clock */}
+                <div className="clock-time">
+                    <img src={Clock} alt="" />
+                    <div>
+                        <span>Time</span>
+                        <span>30 sec</span>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

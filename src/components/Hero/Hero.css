@@ -6,14 +6,14 @@
 .left-h {
     padding: 2rem;
     padding-top: 1.5rem;
-    flex: 3;
+    flex: 4;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
 .right-h {
-    background-color: #f48916;
+    background-color: var(--orange);
     flex: 1;
     position: relative;
 }
@@ -30,17 +30,20 @@
     border-radius: 4rem;
     width: fit-content;
     padding: 20px 13px;
-    position: relative; /*for making the other dic behind*/
+    position: relative;
+    /*for making the other dic behind*/
     display: flex;
     align-items: center;
     justify-content: flex-start;
     color: white;
     text-transform: uppercase;
+    border: 1px var(--orange);
 }
 
 .the-best-add>span {
     z-index: 2;
 }
+
 /*child div*/
 .the-best-add>div {
     position: absolute;
@@ -68,7 +71,7 @@
     font-weight: 200;
     text-transform: none;
     letter-spacing: 1px;
-     width: 80%;
+    width: 80%;
 }
 
 .figures {
@@ -90,7 +93,8 @@
 .figures>div>span:nth-of-type(2) {
     color: var(--gray);
     text-transform: uppercase;
-    font-size: 1.2rem;/**/
+    font-size: 1.2rem;
+    /**/
 }
 
 .hero-buttons {
@@ -101,36 +105,45 @@
 
 .hero-buttons> :nth-child(1) {
     color: white;
-    font-size: 1.2rem;/**/
+    font-size: 1.2rem;
+    /**/
     background-color: var(--orange);
     width: 10rem;
     /* width: 8rem; */
 }
+
 .hero-buttons> :nth-child(1):hover {
-    color: black;
-    background-color: var(--gray);
+    background-color: #393d42;
+    color: var(--orange);
 }
 
 .hero-buttons> :nth-child(2) {
     color: white;
-    font-size: 1.2rem;/**/
+    font-size: 1.2rem;
+    /**/
     background-color: transparent;
     width: 10rem;
     /* width: 8rem; */
-    border: 2px solid var(--orange);
-    
+    border: 3px solid var(--orange);
+
 }
+
 .hero-buttons> :nth-child(2):hover {
     color: white;
-    background-color:  var(--orange);
+    background-color: var(--orange);
 }
 
 /* right side */
 .right-h>.btn {
     position: absolute;
-    right: 3rem;
+    right: 18rem;
     top: 2rem;
     color: black;
+}
+
+.right-h>.btn:hover {
+    background-color: #393d42;
+    color: var(--orange);
 }
 
 .heart-rate {
@@ -153,9 +166,44 @@
 
 .heart-rate> :nth-child(2) {
     color: var(--gray);
+    font-weight: 400;
 }
 
 .heart-rate> :nth-child(3) {
+    color: white;
+    font-size: 1.5rem;
+}
+/* clock-time */
+.clock-time {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--caloryCard);
+    width: fit-content;
+    padding: 1rem;
+    align-items:start;
+    border-radius: 5px;
+    position: absolute;
+    right: 35rem;
+    top: 7rem;
+}
+.clock-time>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.clock-time>img {
+    width: 3rem;
+}
+
+.clock-time>div> :nth-child(1) {
+    color: var(--gray);
+    padding-top: 0.5rem;
+    padding-bottom: 01rem;
+    font-weight: 600;
+}
+
+.clock-time>div> :nth-child(2) {
     color: white;
     font-size: 1.5rem;
 }
@@ -171,7 +219,7 @@
     position: absolute;
     top: 4rem;
     right: 20rem;
-    z-index: -1;
+    z-index: -1;/*behind this hero image*/
     width: 15rem;
 }
 
@@ -256,11 +304,14 @@
         left: 1rem;
         top: 2rem;
     }
-
-    .calories {
-        position: relative;
+.clock-time{
+    left: 25rem;
         top: 5rem;
-        left: 2rem;
+}
+    .calories {
+         position: relative;
+        top: 0rem;
+        left: 18rem;
     }
 
     .calories>img {
