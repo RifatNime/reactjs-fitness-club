@@ -42,20 +42,25 @@ const Hero = () => {
                     </span></div>
 
                 </div>
-                {/* figures */}
+                {/* experience figures */}
                 <div className="figures">
-
-                    <div className=''>
-                        <span>+ 140</span>
-                        <span>Expert Coaches</span>
+                    <div>
+                        <span>
+                            <NumberCounter end={140} start={100} delay={4} preFix="+" />
+                        </span>
+                        <span>expert coaches</span>
                     </div>
-                    <div className=''>
-                        <span>+ 978</span>
-                        <span>Members Joined</span>
+                    <div>
+                        <span>
+                            <NumberCounter end={978} start={878} delay={4} preFix="+" />
+                        </span>
+                        <span>Members joined</span>
                     </div>
-                    <div className=''>
-                        <span>+ 50</span>
-                        <span>Fitness Programs</span>
+                    <div>
+                        <span>
+                            <NumberCounter end={50} delay={2} preFix="+" />
+                        </span>
+                        <span>fitness programs</span>
                     </div>
                 </div>
                 {/* hero buttons */}

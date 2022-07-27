@@ -56,9 +56,15 @@
 }
 
 .join-now>img {
-    width: 1rem
+    width: 1rem;
+    transition: transform .5s ease;
 }
-.category:hover{
+
+.join-now>img:hover {
+    transform: scale(1.5);
+}
+
+.category:hover {
     cursor: pointer;
     background: var(--planCard);
 }
@@ -73,7 +79,29 @@
         margin-top: 2rem;
     }
 
-    .prgoram-categories {
+    .program-categories {
         flex-direction: column;
+    }
+}
+
+.arrow-1 {
+    /* width: 100px;
+    height: 30px; */
+    display: flex;
+}
+
+.arrow-1:before {
+    content: "";
+    background: currentColor;
+    width: 15px;
+    clip-path: polygon(0 10px, calc(100% - 15px) 10px, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, calc(100% - 15px) calc(100% - 10px), 0 calc(100% - 10px));
+    animation: a1 1.5s infinite linear;
+}
+
+@keyframes a1 {
+
+    90%,
+    100% {
+        flex-grow: 1
     }
 }

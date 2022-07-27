@@ -174,6 +174,7 @@
     color: white;
     font-size: 1.5rem;
 }
+
 /* clock-time */
 .clock-time {
     display: flex;
@@ -182,17 +183,19 @@
     background-color: var(--caloryCard);
     width: fit-content;
     padding: 1rem;
-    align-items:start;
+    align-items: start;
     border-radius: 5px;
     position: absolute;
     right: 35rem;
     top: 7rem;
 }
+
 .clock-time>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .clock-time>img {
     width: 3rem;
 }
@@ -220,7 +223,8 @@
     position: absolute;
     top: 4rem;
     right: 20rem;
-    z-index: -1;/*behind this hero image*/
+    z-index: -1;
+    /*behind this hero image*/
     width: 15rem;
 }
 
@@ -301,16 +305,23 @@
         background: none;
     }
 
+    .right-h>.btn {
+        justify-content: center;
+        right: 11rem;
+    }
+
     .heart-rate {
         left: 1rem;
         top: 2rem;
     }
-.clock-time{
-    left: 25rem;
+
+    .clock-time {
+        left: 25rem;
         top: 5rem;
-}
+    }
+
     .calories {
-         position: relative;
+        position: relative;
         top: 0rem;
         left: 18rem;
     }
