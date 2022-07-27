@@ -15,15 +15,17 @@ const Hero = () => {
     const transition = {
         type: 'spring', duration: 3
     }
+    const mobile = window.innerWidth <= 768 ? true : false;
     return (
-        <div className='hero'>
+        <div className='hero' id='home'>
             <div className="blur hero-blur"></div>
             <div className="blur blur-f"></div>
             <div className="left-h">
                 <Header />
                 {/* The Best Add part */}
                 <div className="the-best-add">
-                    <motion.div className='' initial={{ left: "255px" }}
+                    <motion.div
+                        initial={{ left: mobile ? "280px" : '238px' }}
                         whileInView={{ left: "8px" }}
                         transition={{ ...transition, type: "tween" }}
                     ></motion.div>
