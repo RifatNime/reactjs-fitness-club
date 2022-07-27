@@ -136,7 +136,7 @@
 /* right side */
 .right-h>.btn {
     position: absolute;
-    right: 18rem;
+    /* right: 18rem; */
     top: 2rem;
     color: black;
 }
