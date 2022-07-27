@@ -108,17 +108,18 @@
     }
 
     .left-r> :nth-child(1) {
-        width: 7rem;
+        width: 9.5rem;
         height: 17rem;
     }
 
     .left-r> :nth-child(2) {
-        width: 15rem;
+        width: 18.1rem;
         height: 10rem;
     }
 
     .left-r> :nth-child(3) {
-        width: 7rem;
+        width: 10rem;
+        height: 6rem;
     }
 
     .left-r> :nth-child(4) {

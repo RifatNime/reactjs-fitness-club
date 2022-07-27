@@ -270,9 +270,11 @@
 
     .the-best-ad {
         margin-top: 0;
+        display: flex;
         font-size: small;
         align-self: center;
         transform: scale(0.8);
+        align-items: center !important;
     }
 
     .hero-text {
@@ -289,6 +291,10 @@
     }
 
     .hero-buttons {
+        justify-content: center;
+    }
+    .figures{
+        align-items: center;
         justify-content: center;
     }
 
@@ -316,14 +322,14 @@
     }
 
     .clock-time {
-        left: 25rem;
+        left: 22rem;
         top: 5rem;
     }
 
     .calories {
         position: relative;
         top: 0rem;
-        left: 18rem;
+        left: 17rem;
     }
 
     .calories>img {
